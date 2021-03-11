@@ -63,7 +63,7 @@ $(function(){
 <th>過去経歴<br><span class="look">使用ソフト・言語・作成データ</span></th>
 <td>
 <li>給与計算パッケージソフトでのユーザー視点のテスト設計、テストシートとテストデータの作成、テストの実施<br><span class="look">Windows XP～10,WindowsServer 2003～2012R2,SQL Server 2012,IIS,Hyper-V,Excel,固定長txt,csv,tsv</span></li>
-<li>ニュースポータルサイトでのコメント部分の改修<br><span class="look">独自カスタムCentOS,Nginx,PHP,Symfony,PhpStorm,MarkDown</span></li>
+<li>ニュースポータルサイトでのコメント部分の改修<br><span class="look">独自カスタムCentOS,Nginx,PHP,Symfony,PhpStorm,MarkDown,Github</span></li>
 <li>市町村道路の作図、GISやCADで道路骨格や道路幅員を作成<br><span class="look">Windows 10,SQL Server 2017,PowerShell,bat,python,VBScript,VBA,Excel,Access,ImageMagic</span></li>
 </td>
 </tr>
@@ -71,13 +71,15 @@ $(function(){
 <th>保有資格</th>
 <td>
 <li>基本情報技術者試験　合格</li>
-<li>Microsoft Office Specialist Word 2010</li>
-<li>Microsoft Office Specialist Excel 2010</li>
+<li>Microsoft Office Specialist Word 2010　合格</li>
+<li>Microsoft Office Specialist Excel 2010　合格</li>
+<li>普通自動車第一種運転免許　所持</li>
+<li>普通自動二輪車運転免許　所持</li>
 </td>
 </tr>
 <tr>
 <th>自分の強み</th>
-<td>データ作成支援ツールの新規開発期間を短くしています。<br>すぐにサンプルデータが欲しいと御要望の際に、その場で過去自分が作成したソースコードの流用・改良でツールの開発期間を短く抑えてテストの時間も抑えるように心がけています。<br>プライベートで随時ツール改良をして業務の効率化を図っています。<br>最近はエクセルアドインとしてCAD連携用のデータ作成やWEB用のRGB数値変換等を作成しました。</td>
+<td>データ作成支援ツールの新規開発期間を短くしています。<br>すぐにサンプルデータが欲しいとの御要望の際に、その場で過去自分が作成したソースコードの流用・改良でツールの開発期間を短縮してテスト期間も抑えるように心がけています。<br>プライベートで随時ツール改良をして業務の効率化を図っています。<br>最近はエクセルアドインとしてCAD連携用のデータ作成やWEB用のRGB数値変換等を作成しました。</td>
 </tr>
 <tr>
 <th>こだわり</th>
@@ -94,6 +96,7 @@ $(function(){
 <li>Access</li>
 <li>bat</li>
 <li>Excel</li>
+<li>Github</li>
 <li>Hyper-V</li>
 <li>IIS</li>
 <li>ImageMagic</li>
@@ -121,34 +124,46 @@ $(function(){
 <h2>作品集</h2>
 
 <div class="list">
-<img src="images/sample1.jpg" alt="">
-<h4>ここの見出しのサイズは、cssフォルダのstyle.cssの「.list h4」で変更できます。</h4>
-<p>左の画像の幅もstyle.cssの「.list img」のwidthの数字で変更できます。</p>
+<h3><a href="https://github.com/karihata/ArcGisPythonTools" target="_blank">ArcGisPythonTools</a></h3>
+<h4>ArcGIS10.5で使えるPythonでの便利ツールをまとめてあります。</h4>
+<ul class="disc">
+<li>2次元shp出力<br>　　図形データで3次元部分(Z値とM値)を削除した状態でSHP出力をします。</li>
+<li>Len,MLen,PLenAno付与<br>　　ラインデータに長さに関する属性を付与します。<br>　　Len:ラインの長さ、MLen:Lenの少数3桁切り捨てで少数3桁を0埋め、PLenAno:Lenの少数2桁切り捨てで少数2桁を0埋め</li>
+<li>アノテーションtoポイント<br>　　アノテーション(ラベルデータ)を水平垂直が中央に対してポイントデータに変換して一部属性を削除します。</li>
+<li>属性にファイル名を入れる<br>　　属性にファイル名の項目を追加してファイル名を入力します。図形データをマージ(複数の図形データを合体)するときに便利です。</li>
+<li>点名XYからポイントSHP作成<br>　　CSVデータ内の点名,X座標,Y座標からポイントデータを作成します。</li>
+</ul>
 </div>
 
 <div class="list">
-<img src="images/sample2.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
+<h3><a href="https://github.com/karihata/karihataTools" target="_blank">karihataTools</a></h3>
+<h4>MicrosoftExcel2010以降で使える便利ツールをまとめてあります。</h4>
+<ul class="disc">
+<li>[karihataTools]というリボンが追加されます。</li>
+<li>画像ファイルの検査等の自作マクロをエクセルアドインとしてまとめています。</li>
+<li>ImageMagickと連携させたり区切り文字付きで文字結合する関数やシートの一括作成をする。</li>
+</ul>
 </div>
 
 <div class="list">
-<img src="images/sample3.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
+<h3><a href="https://github.com/karihata/karihataTools/tree/master/%E8%87%AA%E4%BD%9C%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB%E3%83%84%E3%83%BC%E3%83%AB" target="_blank">自作マクロ付きのエクセル</a></h3>
+<h4>MicrosoftExcelのマクロ付きエクセルごとの便利ツールになります。</h4>
+<ul class="disc">
+<li>AccessToXlsx.xlsm<br>　　AccessのMDBファイルで1つのテーブルでフィールドの値ごとにエクセルを作成します。</li>
+<li>IDマッチングチェッカー.xlsm<br>　　AccessのMDBファイルとshpデータの属性でID部分に双方の過不足が無いか確認します。</li>
+<li>SIMA出力.xlsm<br>　　ポイントデータの点名,X座標,Y座標を入力するとGISやCADのインポート用データ形式のSIMAファイルを作成できます。<br>　　既存のSIMAファイルをインポートすることもできます。</li>
+<li>mdbテーブル名変更.xlsm<br>　　AccessのMDBファイル内のテーブル名をエクセル上で変更できます。複数のテーブル名を変更する際に便利です。</li>
+<li>エクセルtoCSV.xlsm<br>　　Excelファイルで.xlsxファイルをCSVとして保存します。複数の.xlsxをCSVに変換する際に便利です。</li>
+<li>エクセルからpdf一括変換.xlsm<br>　　Excelファイルで.xlsxファイルをPDFに変換します。複数の.xlsxファイルをPDFに変換する際に便利です。</li>
+<li>シート名をファイル名に変更するマクロ.xlsm<br>　　Excelファイルで.xlsxファイルで先頭のシート名をファイル名と同じにします。複数やるときに便利です。</li>
+<li>テーブルの列名一括変更vba.xlsm<br>　　AccessのMDBファイル内のテーブルを選んでフィールド名をエクセル上で変更できます。複数のフィールド名を変更する際に便利です。</li>
+<li>ワールドファイル計算.xlsm<br>　　ラスターファイル(画像ファイル)をGIS上で決まった座標に配置する際に使うワールドファイルを作成できます。</li>
+<li>印刷用紙サイズをA3横に変更して保存する.xlsm<br>　　Excelファイルで.xlsxファイルで印刷用紙サイズをA3横に変更と保存をします。</li>
+<li>帳票エクセルから一覧を作成.xlsm<br>　　複数の単票形式エクセルファイルを一覧にまとめることができます。項目ごとにセル番地を設定して一覧の内容を変更することもできます。</li>
+<li>部分修正してPDFにするマクロ.xlsm<br>　　Excelファイルで.xlsxファイルで一部内容を変更してからPDF作成します。変更する内容は直接マクロを編集するのでテンプレートのようなものです。</li>
+</ul>
 </div>
 
-<div class="list">
-<img src="images/sample4.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
-</div>
-
-<div class="list">
-<img src="images/sample5.jpg" alt="">
-<h4>見出しを入れます。</h4>
-<p>説明を入れます。</p>
-</div>
 </section>
 
 <!--/#github-->
